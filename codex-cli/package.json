@@ -20,6 +20,7 @@
     "typecheck": "tsc --noEmit",
     "build": "node build.mjs",
     "build:dev": "NODE_ENV=development node build.mjs --dev && NODE_OPTIONS=--enable-source-maps node dist/cli-dev.js",
+    "start:server": "node dist/server.js",
     "stage-release": "./scripts/stage_release.sh"
   },
   "files": [
@@ -50,7 +51,8 @@
     "strip-ansi": "^7.1.0",
     "to-rotated": "^1.0.0",
     "use-interval": "1.4.0",
-    "zod": "^3.24.3"
+    "zod": "^3.24.3",
+    "dockerode": "^4.0.7"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
